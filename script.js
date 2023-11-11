@@ -9,3 +9,8 @@ const choice = prompt("Enter rock, paper, or scissors: ");
 if (choice !== "rock" && choice !== "paper" && choice !== "scissors"){
     console.log("Please enter a valid choice.");
 }
+
+const choices = ["rock", "paper", "scissors"];
+const randomIndex = Math.round(Math.random() * 2);
+const computerChoice = choices[randomIndex];
+console.log(computerChoice);
